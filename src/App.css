@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Quantico&family=Sen&display=swap");
+
+body {
+  background-color: rgb(129, 129, 129);
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*-----------------------     CSS FOR HEADER     ---------------------------------*/
+.head-container {
   display: flex;
+  background-color: #3a3b3f;
+  height: 80px;
+}
+.header {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 10px;
+  width: 85px;
+  height: 45px;
+}
+
+.header-text {
+  font-family: Sen;
+  color: #e5e5e5;
+  font-weight: 200;
+}
+
+/*--------------------------     CSS FOR MAIN     ---------------------------------*/
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.search-headline-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
   flex-direction: column;
+}
+
+.search-bar {
+  border: 0px solid;
+  margin-top: 35px;
+  width: 300px;
+  height: 30px;
+  background: #e6e6e6;
+  border-radius: 50px;
+}
+
+input[type="search"]::placeholder {
+  font-family: Sen;
+  color: rgba(66, 66, 66, 1);
+  padding-left: 12px;
+  background: url("/public/search_small.png") no-repeat scroll 262px -7px;
+  padding-left: 12px;
+}
+
+.headline {
+  margin-top: 40px;
+  text-align: center;
+  font-family: Sen;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+button {
+  margin-top: 50px;
+  height: 40px;
+  width: 360px;
+  background-color: rgb(252, 206, 79);
+  border-radius: 5px;
+  font-family: Sen;
+  font-size: 24px;
+  box-shadow: none;
+}
+
+/* ------------------------- CSS for Cards --------------------------------- */
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin-top: 30px;
+  width: 240px;
+  height: 450px;
+  background-color: #dacece;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.poster {
+  width: 240px;
+  height: 350px;
+  border-radius: 1%;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Sen;
+}
+
+.year-of-release {
+  font-size: 14px;
+  font-family: Sen;
+  text-align: center;
+  margin-top: 8px;
 }
